@@ -4,30 +4,23 @@ Der Benutzer soll durch das Produkt in die Lage versetzt werden, Videoencoder zu
 
 \subsection{Musskriterien}
 
-\begin{itemize}
-	\item Eingabe von unkomprimierten Videos, einer festen Farbe, einem Bild oder Noise.
-	\item Manipulation der Videos
-	\begin{itemize}
-		\item Erstellen einer Pipeline mit verschiedenen Manipulationsoptionen.
-		\item Zusammenstellung über knotenbasierte GraphView
-	\end{itemize}
-	\item Analyse der Videos
-	\begin{itemize}
-		\item Anzeigen verschiedener Diagramme.
-		\item Videoausgabe mit optionalen Overlayoptionen.
-	\end{itemize}
-	\item Speichern von Videos und Pipeline.
-\end{itemize}
+\begin{description}
+	\item[Eingabe] Der Benutzer soll unkomprimierte Videos, eine feste Farbe, ein Bild oder Noise eingeben können.
+	\item[Manipulation der Videos] Der Benutzer soll eine Pipeline mit verschiedenen Manipulationsoptionen erstellen können, die über eine knotenbasierte GraphView zusammengestellt wird.
+	\item[Analyse der Videos] Der Benutzer soll verschiedene Diagramme anzeigen können und Videos mit optionalen Overlayoptionen abspielen können.
+	\item[Ausgabe] Der Benutzer soll die Videos und Pipeline speichern können.
+\end{description}
 
 \subsection{Wunschkriterien}
 
 \begin{itemize}
-	\item Benutzern eine Undo/Redo-Funktion bieten.
-	\item Verwenden von Tabs im Interface.
-	\item Benutzern die Möglichkeit bieten, die Aufösung der eingegebenen Videos automatisch zu erkennen.
-	\item Verwenden einer asynchronen, nichtblockenden UI.
-	\item Ausnutzen von Multithreading-Möglichkeiten.
-	\item Verarbeiten der Motionvektoren des Encoders.
+	\item Benutzern eine Undo/Redo-Funktion bieten
+	\item Verwenden von Tabs im Interface
+	\item Benutzern die Möglichkeit bieten, die Aufösung der eingegebenen Videos automatisch zu erkennen
+	\item Verwenden einer asynchronen, nichtblockenden UI
+	\item Ausnutzen von Multithreading-Möglichkeiten
+	\item Verarbeiten der Motionvektoren des Encoders
+	\item Benutzern die Möglichkeit bieten, Plugins einzubinden
 \end{itemize}
 
 \subsection{Abgrenzungskriterien}
@@ -36,4 +29,5 @@ Der Benutzer soll durch das Produkt in die Lage versetzt werden, Videoencoder zu
 	\item Keine Soundausgabe
 	\item Nur YUV-Videos als Eingabe zugelassen
 	\item Keine Speicherung der Analysedaten
+	\item keine Verarbeitung eines Alphakanals
 \end{itemize}
